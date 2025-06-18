@@ -62,14 +62,18 @@ export default function Screen() {
 
         <Input placeholder="Nombre"
           value={product.nombre}
-          onChangeText={handleOnChangeNombre} 
-          />
+          onChangeText={handleOnChangeNombre}
+        />
         <Input placeholder="Precio"
           value={product.precio}
           onChangeText={handleOnChangePrecio}
           keyboardType="decimal-pad" />
 
-        <Button onPress={guardar} className={cn(buttonTextVariants(), buttonVariants())}>Guardar</Button>
+        <Button onPress={guardar} className={cn(buttonTextVariants(), buttonVariants())}>
+          <Text>
+            Guardar
+          </Text>
+        </Button>
       </View>
 
 
