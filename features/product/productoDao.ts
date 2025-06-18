@@ -1,5 +1,5 @@
-import db from "./db/db";
-import { Product } from "./features/product/product.type";
+import db from "../../db/db";
+import { Product } from "./product.type";
 
 // Crear tabla de productos
 export const crearTablaProducto = async () => {
